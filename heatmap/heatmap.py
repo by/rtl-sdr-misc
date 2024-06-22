@@ -140,7 +140,7 @@ def duration_parse(s):
 def date_parse(s):
     if '-' not in s:
         return datetime.datetime.fromtimestamp(int(s))
-     elif '.' not in s:
+    elif '.' not in s:
         return datetime.datetime.strptime(s, '%Y-%m-%d %H:%M:%S')
     return datetime.datetime.strptime(s, '%Y-%m-%d %H:%M:%S.%f')
 
